@@ -41,7 +41,7 @@ public class OrderTest {
     }
 
     @Test
-    void formTests() {
+    void formValidData() {
         WebElement form = driver.findElement(By.cssSelector("form"));
         List<WebElement> inputs = form.findElements(By.cssSelector("input"));
         inputs.get(0).sendKeys("Иванов Иван Иванович");
